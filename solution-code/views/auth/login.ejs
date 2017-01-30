@@ -4,27 +4,30 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="/stylesheets/style.css">
   <title>Login</title>
 </head>
-<body>
-  <form action="/login" method="POST">
-    <h2>Login</h2>
+<body class="form-page">
+  <div id="form-container">
+    <form action="/login" method="POST">
+      <h2>Login</h2>
 
-    <label for="username">Username</label><br>
-    <input type="text" name="username" placeholder="Your username" required><br><br>
+      <label for="username">Username</label><br>
+      <input class="txt" type="text" name="username" placeholder="Your username" required><br><br>
 
-    <label for="password">Password</label><br>
-    <input type="password" name="password" placeholder="Your password" required><br><br>
+      <label for="password">Password</label><br>
+      <input class="txt" type="password" name="password" placeholder="Your password" required><br><br>
 
-    <% if (typeof(errorMessage) !== "undefined") { %>
-      <div><%= errorMessage %></div>
-    <% } %>
+      <% if (typeof(errorMessage) !== "undefined") { %>
+        <div class="error-message"><%= errorMessage %></div>
+      <% } %>
 
-    <button>Login</button>
+      <button class="btn">Login</button>
 
-    <p>
-      Don't have an account? <a href="/signup">Sign up</a>
-    </p>
-  </form>
+      <p>
+        Don't have an account? <a href="/signup">Sign up</a>
+      </p>
+    </form>
+  </div>
 </body>
 </html>
