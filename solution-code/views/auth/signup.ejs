@@ -18,6 +18,10 @@
 
     <br><br>
 
+    <% if (typeof(errorMessage) !== "undefined") { %>
+      <div><%= errorMessage %></div>
+    <% } %>
+
     <button>Create account</button>
   </form>
 </body>
