@@ -10,11 +10,11 @@
   <form action="/login" method="POST">
     <h2>Login</h2>
 
-    <label for="username">Username</label>
-    <input type="text" name="username" placeholder="Your username"><br><br>
+    <label for="username">Username</label><br>
+    <input type="text" name="username" placeholder="Your username" required><br><br>
 
-    <label for="password">Password</label>
-    <input type="password" name="password" placeholder="Your password"><br><br>
+    <label for="password">Password</label><br>
+    <input type="password" name="password" placeholder="Your password" required><br><br>
 
     <% if (typeof(errorMessage) !== "undefined") { %>
       <div><%= errorMessage %></div>
