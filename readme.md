@@ -1,3 +1,5 @@
+![](https://i.imgur.com/1QgrNNw.png)
+
 # PP | Basic Auth
 
 ## Learning Goals
@@ -71,9 +73,19 @@ Let's create two different routes protected by authentication: main page and pri
 
 ## Iteration 4 - Front-End validations
 
-To finish up this exercise, we are going to add some validations in our forms. Remember we have two different forms: sign up and login.
+Now, we are going to add some validations in our forms. Remember we have two different forms: sign up and login.
 
 Remember that the different inputs we have can't be empty to save/login the user. Check out the [documentation](https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Data_form_validation) and try to find how we can ensure that the fields are not empty in the front-end.
+
+## Iteration 5 - Password Strength Measurement
+
+To finish up with the exercise, we will add a jQuery plugin to measure the password strength when we sign up in the application. We recommend you to apply the [Strength.js](http://jquerycards.com/forms/inputs/strength-js/) you can find in jQuery Cards, but feel free to look for another one.
+
+Once it's applied, the result should be something like this:
+
+![](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_59bb37a85da33b090817fcb181dc7a33.png)
+
+This will be very helpful to our users, to let them know how sure is the password they are going to use to log in our application.
 
 ## Summary
 

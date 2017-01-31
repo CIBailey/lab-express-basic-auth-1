@@ -23,7 +23,8 @@ a {
   width: 400px;
 }
 
-#form-container .txt {
+#form-container .txt,
+input.strength {
   box-sizing: border-box;
   font-size: 14px;
   margin: 5px 0 15px;
@@ -47,4 +48,16 @@ a {
   margin-bottom: 20px;
   padding: 20px;
   width: 100%;
+}
+
+/* Strength measurement styles */
+.strength_meter {
+  height: 40px;
+  margin-top: 15px;
+  width: 100%;
+}
+
+.strength_meter div {
+  height: 100%;
+  line-height: 40px;
 }
