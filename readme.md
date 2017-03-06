@@ -39,7 +39,7 @@ Please, push every file needed to make your app properly to Github before creati
 
 In this Pair Programming exercise, we are going to create a project where we will have all the basic authorization and authentication processes and features that you would in a real application.
 
-![](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_dc768775637b02ee201ec3412eaf7bee.png)
+![](images/incorrect.png)
 
 We provide you starter code that includes some of the packages you will need to complete the exercise. These packages are `ejs`, `mongodb`, and `mongoose`. In addition, we have generated the project using Express Generator.
 
@@ -73,7 +73,7 @@ At this point, we have implemented basic authentication features. Now, we have t
 Let's create two different routes protected by authentication:
 
 - `/main` - Add a funny picture of a cat and a link back to the home page
-- `/private` - Add your favorite `gif` and an `<h1>` denoting the page as private. 
+- `/private` - Add your favorite `gif` and an `<h1>` denoting the page as private.
 
 Create the views and add the middleware configuration to avoid accessing these routes without being authenticated.
 
@@ -81,7 +81,7 @@ Create the views and add the middleware configuration to avoid accessing these r
 
 Let's add validations to our forms. Remember we have two different forms: sign up and login.
 
-Remember, when a user signs up or logs in, both the username and password fields must be filled in. 
+Remember, when a user signs up or logs in, both the username and password fields must be filled in.
 
 Check out the [documentation](https://developer.mozilla.org/en-US/docs/Learn/HTML/Forms/Data_form_validation) at MDN. See if you can find a *constraint* that requires the user to fill a field prior to submission.
 
@@ -91,9 +91,9 @@ Finally, we will add a jQuery plugin to measure the password strength when we si
 
 Once finished, the result should be something like this:
 
-![](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_59bb37a85da33b090817fcb181dc7a33.png)
+![](images/signup.png)
 
-This is a very common and helpful feature for users, as many do not know anything about password strength. 
+This is a very common and helpful feature for users, as many do not know anything about password strength.
 
 ## Summary
 
