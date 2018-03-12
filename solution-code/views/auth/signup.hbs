@@ -20,9 +20,9 @@
       <label for="password">Password</label><br>
       <input id="password" class="txt" type="password" name="password" placeholder="DeathStar" required><br><br>
 
-      <% if (typeof(errorMessage) !== "undefined") { %>
-        <div class="error-message"><%= errorMessage %></div>
-      <% } %>
+      {{#if errorMessage}}
+        <div class="error-message">{{ errorMessage }}</div>
+      {{/if}}
 
       <button class="btn">Create account</button>
 

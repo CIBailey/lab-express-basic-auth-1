@@ -7,6 +7,7 @@ const cookieParser   = require("cookie-parser");
 const bodyParser     = require("body-parser");
 const mongoose       = require("mongoose");
 const app            = express();
+const hbs            = require('hbs')
 
 // Controllers
 const authController = require("./controllers/authController");
@@ -20,7 +21,7 @@ app.use(logger("dev"));
 
 // View engine configuration
 app.set("views", path.join(__dirname, "views"));
-app.set("view engine", "ejs");
+app.set("view engine", "hbs");
 app.use(express.static(path.join(__dirname, "public")));
 
 // Access POST params with body parser
